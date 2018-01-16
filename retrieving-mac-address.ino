@@ -2,9 +2,9 @@
 ================================================================================================
 Retrieving MAC Address - retrieving-mac-address.ino
 ================================================================================================
-This project deals with Retreving a Mac Address locally.
+This project deals with Retreving MAC Address when is connected to the Internet.
 
-@package        Retrieving IP Address
+@package        Retrieving MAC Address
 @copyright      Copyright (C) 2018. Benjamin Lu
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
 @author         Benjamin Lu (https://www.benjlu.com/)
@@ -45,17 +45,17 @@ void setup() {
   delay(2000);
   byte *mac = Ethernet.localMAC();
   
-  Serial.print(mac[0],HEX);
+  Serial.print(mac[0], HEX);
   Serial.print(":");
-  Serial.print(mac[1],HEX);
+  Serial.print(mac[1], HEX);
   Serial.print(":");
-  Serial.print(mac[2],HEX);
+  Serial.print(mac[2], HEX);
   Serial.print(":");
-  Serial.print(mac[3],HEX);
+  Serial.print(mac[3], HEX);
   Serial.print(":");
-  Serial.print(mac[4],HEX);
+  Serial.print(mac[4], HEX);
   Serial.print(":");
-  Serial.println(mac[5],HEX);
+  Serial.println(mac[5], HEX);
 }
 
 /*
